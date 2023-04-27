@@ -6,7 +6,6 @@
     <title>FAM'S Coffee Shop</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='/web/CSS/index.css'>
-    <script src='index.js'></script>
     <!--IMPORTAMOS LA FUENTE DE TEXTO HEEBO(TEXTO)-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,42 +19,45 @@
     <!----------------------------------------------HEADER---------------------------------------------->
     <div id="header">
         <img src="/web/IMG/logos/logo_wide_colour_transparent.png" id="logo_header">
-        <div class="buttons_header">HOME</div>
-        <div class="buttons_header">PRODUCTS</div>
-        <div class="buttons_header">WORK WITH US</div>
-
-        <img src="/web/IMG/logos/white_logos/shopping_cart - copia.png" id="logo_cart">
-        <div class="cart_text">SHOPPING CART</div>
+        <a href="index.html"><div class="buttons_header">HOME</div></a>
+        <a href="products.html"><div class="buttons_header">PRODUCTS</div></a>
+        <a href="login.html"><div class="buttons_header">STAFF</div></a>
     </div>
     <!----------------------------------------------CONTENT--------------------------------------------->
     <div id="content">
         <!---------------------------------DIV1--------------------------------->
-        <img src="IMG/HOME/bg1.png" id="bg1">
-        <span id="title1">FAM'S CAPSULES</span>
-        <span id="text1">THE PLEASURE IN<br>INNOVATING WITH<br>EACH CUP</span>
+        <div id="bg1">
+            <div id="title1">FAM'S CAPSULES</div>
+            <div id="text1">THE PLEASURE IN<br>INNOVATING WITH<br>EACH CUP</div>
+        </div>
         <div id="gradient"></div>
         <!---------------------------------DIV2--------------------------------->
-        <img src="IMG/HOME/bg2.png" id="bg2">
-        <span id="title2">THE BEST COFFEE<BR>MACHINES</span>
-        <span id="text2">SINCE 1956</span>
-        <img src="IMG/logos/white_logos/logo_transparent_full.png" id="logo_bg2">
+        <div id="bg2">
+            <div id="title2">THE BEST COFFEE<BR>MAKERS</div>
+            <div id="text2">SINCE 1956</div>
+            <img src="IMG/logos/white_logos/logo_transparent_full.png" id="logo_bg2">
+        </div>
         <!---------------------------------DIV2--------------------------------->
-        <img src="IMG/HOME/bg3.png" id="bg3">
-        <span id="title3">CUSTOMER SERVICE</span>
-        <span id="text3">AT YOUR COMPLETE DISPOSAL</span>
-        <img src="IMG/logos/stars.png" id="stars">
+        <div id="bg3">
+            <div id="title3">CUSTOMER SERVICE</div>
+            <div id="text3">AT YOUR COMPLETE DISPOSAL</div>
+            <img src="IMG/logos/stars.png" id="stars">
+        </div>
     </div>
     <!----------------------------------------------FOOTER---------------------------------------------->
     <div id="footer">
         <img src="/web/IMG/logos/logo_wide_colour_transparent.png" id="logo_footer">
-        <span id="footer_text1">Contact our support:</span>
-        <span id="footer_text2">948 82 67 42</span>
-        <span id="follow">Follow us:</span>
+        <div id="footer_text1">Contact our support:</div>
+        <div id="footer_text2">948 82 67 42</div>
+        <div id="follow">Follow us:</div>
         <div id="social">
-            <img src="/web/IMG/logos/facebook_color.png" class="logo_social">
-            <img src="/web/IMG/logos/twitter_color.png" class="logo_social">
-            <img src="/web/IMG/logos/instagram_color.png" class="logo_social">
+            <a href="https://facebook.com"><img src="/web/IMG/logos/facebook_color.png" class="logo_social"></a>
+            <a href="https://twitter.com"><img src="/web/IMG/logos/twitter_color.png" class="logo_social"></a>
+            <a href="https://instagram.com"><img src="/web/IMG/logos/instagram_color.png" class="logo_social"></a>
         </div>
     </div>
+
+    
+    <script src='JS/index.js'></script>
 </body>
 </html>
