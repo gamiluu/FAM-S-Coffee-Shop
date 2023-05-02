@@ -82,7 +82,7 @@ public class Producto {
         return "Producto{" + "id=" + id + ", rating=" + rating + ", title=" + title + ", desciption=" + desciption + ", imgUrl=" + imgUrl + ", type=" + type + ", price=" + price + '}';
     }
     
-    /* CONTINUAR ARREGLANDO ESTO :)
+    /* CONTINUAR ARREGLANDO ESTO :) :)
     public static String toCadena(Producto producto) {
         return "Producto{"
                 + "\"title\"=" + producto.getTitle() + ", "
