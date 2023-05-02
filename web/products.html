@@ -3,9 +3,9 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>FAM'S Coffee Shop</title>
+    <title>Products</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/web/CSS/index.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/products.css'>
     <!--IMPORTAMOS LA FUENTE DE TEXTO HEEBO(TEXTO)-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <!----------------------------------------------HEADER---------------------------------------------->
     <div id="header">
         <img src="/web/IMG/logos/logo_wide_colour_transparent.png" id="logo_header">
@@ -24,26 +25,38 @@
         <a href="login.html"><div class="buttons_header">STAFF</div></a>
     </div>
     <!----------------------------------------------CONTENT--------------------------------------------->
-    <div id="content">
-        <!---------------------------------DIV1--------------------------------->
-        <div id="bg1">
-            <div id="title1">FAM'S CAPSULES</div>
-            <div id="text1">THE PLEASURE IN<br>INNOVATING WITH<br>EACH CUP</div>
+    
+
+    <!-- Aquí comienza la sección de filtro -->
+    <div class="filtro">
+        <div id="capsulas"></div>
+        <div id="cafeteras"></div>
+        <div id="precio">
+            <input type="range" min="0" max="100" value="50">
         </div>
-        <div id="gradient"></div>
-        <!---------------------------------DIV2--------------------------------->
-        <div id="bg2">
-            <div id="title2">THE BEST COFFEE<BR>MAKERS</div>
-            <div id="text2">SINCE 1956</div>
-            <img src="IMG/logos/white_logos/logo_transparent_full.png" id="logo_bg2">
-        </div>
-        <!---------------------------------DIV2--------------------------------->
-        <div id="bg3">
-            <div id="title3">CUSTOMER SERVICE</div>
-            <div id="text3">AT YOUR COMPLETE DISPOSAL</div>
-            <img src="IMG/logos/stars.png" id="stars">
+        <div id="close_filter">
+            <div id="close"></div>
+            <div id="filter_tag"></div>
         </div>
     </div>
+    <!-- Aquí finaliza la seccion de filtro -->
+
+
+
+    <!-- Aquí comienza la sección de productos -->
+    <div class="productos">
+        <!-- <div id="product_card_1">
+            <img src="/web/IMG/products/capsulas/capsula1.jpg" class="product_img">
+            <div class="product_name">Capsula 1</div>
+            <div class="product_price">1.99€</div>
+            <div class="product_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</div>
+            <div class="product_button">Add to cart</div>
+        </div> -->
+    </div>
+    <!-- Aquí finaliza la sección de productos -->
+
+
+    
     <!----------------------------------------------FOOTER---------------------------------------------->
     <div id="footer">
         <img src="/web/IMG/logos/logo_wide_colour_transparent.png" id="logo_footer">
@@ -57,7 +70,6 @@
         </div>
     </div>
 
-    
-    <script defer src='JS/index.js'></script>
+    <script defer src='JS/products.js'></script>
 </body>
 </html>
