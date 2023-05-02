@@ -56,13 +56,13 @@ img{-webkit-user-drag: none;}
     animation-timing-function: ease-in-out;
     animation-delay: 0s;
     animation-name: slideDown;
+    display: flex;
+    align-items: center;
 }
 #logo_header{
     float:left;
-    width: 8.5%;
     height: 60%;
     margin-left: 1.5vw;
-    margin-top: 1.3vh;  
 }
 .buttons_header{
     float: left;
@@ -71,9 +71,9 @@ img{-webkit-user-drag: none;}
     text-align: center;
     color: var(--white);
     margin-left: 2.2vw;
-    margin-top: 2.9vh;
     border-top: 1px solid var(--transparent);
     transition: color 0.3s, border 0.3s;
+    margin-top: 0.5vh;
 }
 .buttons_header:hover{
     color: var(--gold);
@@ -139,7 +139,7 @@ img{-webkit-user-drag: none;}
     height: 59.2%;
     left: 0px;
     top: 103.8%;
-    transform: scale(105%);
+    transform: scale(105%) translateY(2%);
     filter: opacity(0);
     transition: transform 0.8s ease-in-out , filter 0.4s ease-in-out;
     background-image: url("/web/IMG/HOME/bg2.png");
@@ -147,7 +147,7 @@ img{-webkit-user-drag: none;}
     background-size:cover;
 }
 #bg2.reveal{
-    transform: scale(100%);
+    transform: scale(100%) translateX(0);
     filter: opacity(1);
 }
 #title2{
