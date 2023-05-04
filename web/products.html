@@ -39,7 +39,31 @@
             <h4>COFFEE MAKERS</h4>
         </div>
         <div id="precio">
-            <input type="range" min="0" max="100" value="50">
+            <div class="wrapper">
+                <header>
+                    <span>Min</span>
+                    <h2>Price Range</h2>
+                    <span>Max</span>
+                </header>
+
+                <div class="price-input">
+                  <div class="field">
+                    <input type="number" class="input-min" value="120">
+                  </div>
+                  
+                  <div class="field">
+                    <input type="number" class="input-max" value="380">
+                  </div>
+                </div>
+
+                <div class="slider">
+                  <div class="progress"></div>
+                </div>
+                <div class="range-input">
+                  <input type="range" class="range-min" min="0" max="500" value="120" step="1">
+                  <input type="range" class="range-max" min="0" max="500" value="380" step="1">
+                </div>
+              </div>
         </div>
         <div id="close_filter">
             <div id="close"></div>
