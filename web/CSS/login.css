@@ -60,7 +60,7 @@ img{-webkit-user-drag: none;}
 #logo_header{
     float:left;
     height: 60%;
-    margin-left: 1.5vw;
+    margin-left: 1.6vw;
 }
 .buttons_header{
     float: left;
@@ -100,6 +100,8 @@ img{-webkit-user-drag: none;}
     display: flex;
     align-items: center;
 }
+
+
 #login{
     background-color: rgba(20, 20, 20, 0.8);;
     width: 60%;
@@ -114,12 +116,11 @@ img{-webkit-user-drag: none;}
 }
 #form{
     margin: auto;
-    height: 15vw;
+    height: 14vw;
     width: 16.5vw;
-    margin-top: 1.8vw;
+    margin-top: 1.4vw;
 }
 .labels{
-    margin-top: 0.2vw;
     margin-left: 0.2vw;
     font-weight: 600;
     font-size: 1.3vw;
@@ -129,7 +130,7 @@ img{-webkit-user-drag: none;}
     outline: none;
     height: 1.2vw;
     width: 16vw;
-    margin-bottom: 1.5vw;
+    margin-bottom: 1.2vw;
     border: 0.2vw solid #EFBB02;
     border-radius: 3px;
     background-color: rgba(255, 255, 255, 0.9);
@@ -144,7 +145,7 @@ img{-webkit-user-drag: none;}
     font-family: var(--titles);
     font-size: 1.1vw;
     font-weight: 600;
-    margin-top: 0.5vw;
+    margin-top: 0.4vw;
 }
 #button:hover{
     background: linear-gradient(180deg, #EFBB02 0%, rgba(239, 187, 2, 0.56) 100%, #EFBB02 100%);
@@ -155,7 +156,11 @@ img{-webkit-user-drag: none;}
     color: white;
     font-size: 1.1vw;
 }
-
+#login_error{
+    color:#FF0000;
+    margin-bottom: 0.3vw;
+    display: none;
+}
 
 
 #warning{

@@ -30,13 +30,17 @@
             <img src="/web/IMG/logos/logo_wide_colour_transparent.png" id="login_logo">
             <!---------------FORMULARIO QUE CONECTA CON EL SERVLET DE JAVA--------------->
             <form action="/Controller" method="post" id="form">
-                <label class="labels">Username:</label><br>
+                <label class="labels">Username:</label>
                 <input type="text" id="username" name="USERNAME" class="inputs">
-                <label  class="labels">Password:</label><br>
+                <label  class="labels">Password:</label>
                 <input type="password" id="password" name="PASSWORD" class="inputs">
                 <input type="submit" value="SUBMIT" id="button" name="BUTTON">
             </form> 
-            <div id="text_clients"><b>If you are not a staff member,</b><br><a href="index.html">click here!</a></div>
+            <div id="text_clients">
+                <div id="login_error">Username or password is not valid.<br></div>
+                <b>If you are not a staff member,</b>
+                <br>
+                <a href="index.html">click here!</a></div>
         </div>
         <div id="warning">
             <div id="text1"><b>WARNING!</b><br></div>
