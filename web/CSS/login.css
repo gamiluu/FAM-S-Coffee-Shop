@@ -145,21 +145,24 @@ img{-webkit-user-drag: none;}
     font-family: var(--titles);
     font-size: 1.1vw;
     font-weight: 600;
-    margin-top: 0.4vw;
+    margin-top: 1.7vw;
 }
 #button:hover{
     background: linear-gradient(180deg, #EFBB02 0%, rgba(239, 187, 2, 0.56) 100%, #EFBB02 100%);
 }
+
 #text_clients{
+    padding-top: 3vh;
     text-align: center;
     text-decoration: none;
     color: white;
     font-size: 1.1vw;
 }
+
 #login_error{
     color:#FF0000;
     margin-bottom: 0.3vw;
-    display: none;
+    display: none; 
 }
 
 
