@@ -28,6 +28,27 @@ body{
 body::-webkit-scrollbar {display: none;}
 img{-webkit-user-drag: none;}
 
+/*-------------------------------------------------------ANIMACIONES-------------------------------------------------------*/
+/*@keyframes slideRight { /*Usada en el #titulo1/
+    0% {transform: translateX(-5%); opacity: 0;}
+    45% {transform: translateX(-5%);opacity: 0%; }
+    100% {transform: translateX(0);opacity: 1;}
+}
+@keyframes slideUp { /*Usada en el #texto1/
+    0% {transform: translateY(7%);opacity: 0;}
+    60% {transform: translateY(7%);opacity: 0;}
+    100% {transform: translateY(0);opacity: 1;}
+}
+@keyframes slideDown { /*Usada en el #texto1/
+    0% {transform: translateY(-7%);opacity: 0;}
+    40% {transform: translateY(-7%);opacity: 0;}
+    100% {transform: translateY(0);opacity: 1;}
+}
+@keyframes fadeIN { /*Usada en el #bg1/
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+} */
 /*-------------------------------------------------------HEADER-------------------------------------------------------*/
 #header{
     position: relative;
@@ -327,6 +348,7 @@ input[type="range"]::-webkit-slider-thumb{
     top: 100%;
     width: 100%;
     height: 11vw;
+    height: 23vh;
     background-color: var(--black_footer);
     border-top: solid var(--gold) 0.3vh;
 }
@@ -336,6 +358,9 @@ input[type="range"]::-webkit-slider-thumb{
     height: 3.5vw;
     left: 20vw;
     top: 3.6vw;
+    width: 23vh;
+    left: 20vw;
+    top: 8vh;
 }
 #footer_text1{
     position: absolute;
@@ -343,6 +368,9 @@ input[type="range"]::-webkit-slider-thumb{
     top: 3.8vw;
     font-weight: 400;
     font-size: 0.85vw;
+    top: 8vh;
+    font-weight: 400;
+    font-size: 1.8vh;
     text-align: center;
 }
 #footer_text2{
@@ -351,6 +379,10 @@ input[type="range"]::-webkit-slider-thumb{
     top: 5.1vw;
     font-weight: 600;
     font-size: 1.85vw;
+    left: 44.8vw;
+    top: 10.2vh;
+    font-weight: 600;
+    font-size: 3.8vh;
     text-align: center;
     color: var(--gold);
 }
@@ -363,12 +395,18 @@ input[type="range"]::-webkit-slider-thumb{
     font-style: normal;
     font-weight: 400;
     font-size: 1.6vw;
+    top: 10vh;
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vh;
     text-align: center;
 }
 #social{
     position: absolute;
     left: 70.5vw;
     top: 4.4vw;
+    top: 9.5vh;
 }
 .logo_social{
     height: 2.3vw;
