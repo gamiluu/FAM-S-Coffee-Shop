@@ -45,22 +45,18 @@ img{-webkit-user-drag: none;}
 #header{
     position: fixed;
     width: 100%;
-    height: 8.6%;
+    height: 4vw;
     left: 0px;
     top: 0px;
     z-index: 15;
     background: var(--black_header);
     border-bottom: solid var(--gold) 0.3vh;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0s;
-    animation-name: slideDown;
     display: flex;
     align-items: center;
 }
 #logo_header{
     float:left;
-    height: 60%;
+    height: 2.5vw;
     margin-left: 1.5vw;
 }
 .buttons_header{
@@ -80,6 +76,9 @@ img{-webkit-user-drag: none;}
 }
 
 /*-------------------------------------------------------CONTENT------------------------------------------------------*/
+#spacer{
+    margin-bottom: 7%;
+}
 #bg{
     position: fixed;
     left: 0;
@@ -92,15 +91,17 @@ img{-webkit-user-drag: none;}
     filter: blur(20px) brightness(0.7);
     z-index: -10;
 }
-
+/*----------------------------------------------------LATEST NEWS-----------------------------------------------------*/
 #content{
     background: #141414c2;
     width: 70vw;
     margin: auto;
-    margin-top: 7%;
+    margin-top: 3%;
     border-top: solid 0.2vw var(--gold);
     padding-bottom: 3vw;
     padding-bottom: 1.2vw;
+    display: block;
+    border-radius: 0  0 0.8vw 0.8vw;
 }
 .title{
     font-family: var(--titles);
@@ -109,12 +110,15 @@ img{-webkit-user-drag: none;}
     font-size: 3vw;
     text-align: center;
     margin-top: 1vw;
+    margin-bottom: 1.5vw;
 }
 .news{
     background: rgba(0, 0, 0, 0.26);
     width: 90%;
     margin: auto;
     border-bottom: solid 0.1vw #4B4B4B;
+    width: 90%;
+    margin: auto;
     width: 90%;
     margin: auto;
     padding: 1.2vw;
@@ -145,7 +149,7 @@ hr{
     background-color: #4B4B4B;
     width: 92%;
     height: 0.1vw;
-    margin: auto;
+    margin: auto auto 0.5vw auto;
     border: 0;
 }
 a{
@@ -153,9 +157,78 @@ a{
     font-weight: bolder;
 }
 .news_video{
-    width: 35%;
+    width: 23vw;
+    height: 13vw;
 }
 
+
+/*----------------------------------------------------WORK'S COUNCIL-----------------------------------------------------*/
+#employees{
+    width: 100%;
+    display: inline;
+}
+.staff{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.589);
+    width: 21vw;
+    height: 9.6vw;
+    border: solid 0.1vw var(--gold);
+    border-radius: 0.6vw;
+    margin-left: 1.5vw;
+}
+img{
+    display: block;
+    width: 9vw;
+    height: 9vw;
+    float: left;
+    margin-top: 0.3vw;
+    margin-left: 0.3vw;
+    margin-right: 0.5vw;
+    border-radius: 0.5vw;
+}
+.name{
+    padding: 1.1vw 0 0 0;
+    color: var(--gold);
+    font-weight: bolder;
+    font-size: 2.5vw;
+    font-family:var(--titles);
+}
+.lastname{
+    display: block;
+    padding: 0.3vw 0 0 1.5vw;
+    color: var(--gold);
+    line-height: 0.3vw;
+    font-weight: bolder;
+    font-size: 1vw;
+    font-family:var(--titles);
+}
+.job{
+    padding: 1vw 0 0 0;
+    font-family: var(--heebo);
+    font-weight: bolder;
+    font-size: 1.5vw;
+    line-height: 1.3vw;
+    color: #CFCFCF;
+}
+
+.paragraphs{
+    margin: auto;
+    width:85%;
+    text-align: justify;
+    margin-top: 3.5vw;
+    font-size: 0.9vw;
+}
+.paragraphs_title{
+    color: var(--gold);
+    font-weight: bolder;
+    font-size: 1.65vw;
+    font-family:var(--titles);
+}
+li{
+    list-style-type: none;
+    padding: 0 2vw 0 0 ;
+    text-indent: 3vw;
+}
 
 
 
@@ -165,32 +238,33 @@ a{
 #footer{
     position: absolute;
     width: 100%;
-    height: 23vh;
+    height: 11vw;
     left: 0px;
-    margin-top: 30%;
+    margin-top: 3vw;
     background-color: var(--black_footer);
     border-top: solid var(--gold) 0.3vh;
 }
 #logo_footer{
     position: absolute;
-    width: 23vh;
+    width: 12vw;
+    height: 3.5vw;
     left: 20vw;
-    top: 8vh;
+    top: 3.6vw;
 }
 #footer_text1{
     position: absolute;
     left: 45.9vw;
-    top: 8vh;
+    top: 3.8vw;
     font-weight: 400;
-    font-size: 1.8vh;
+    font-size: 0.85vw;
     text-align: center;
 }
 #footer_text2{
     position: absolute;
-    left: 44.8vw;
-    top: 10.2vh;
+    left: 44.5vw;
+    top: 5.1vw;
     font-weight: 600;
-    font-size: 3.8vh;
+    font-size: 1.85vw;
     text-align: center;
     color: var(--gold);
 }
@@ -198,17 +272,17 @@ a{
     font-family: 'Vollkorn', serif;
     position: absolute;
     left: 63vw;
-    top: 10vh;
+    top: 5vw;
     font-family: 'Vollkorn';
     font-style: normal;
     font-weight: 400;
-    font-size: 3vh;
+    font-size: 1.6vw;
     text-align: center;
 }
 #social{
     position: absolute;
     left: 70.5vw;
-    top: 9.5vh;
+    top: 4.4vw;
 }
 .logo_social{
     height: 2.3vw;
