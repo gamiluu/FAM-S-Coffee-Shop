@@ -51,7 +51,7 @@ img{-webkit-user-drag: none;}
     top: 0px;
     z-index: 15;
     background: var(--black_header);
-    border-bottom: solid var(--gold) 0.3vh;
+    border-bottom: solid var(--gold) 0.15vw;
     animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
     animation-delay: 0s;
@@ -73,7 +73,7 @@ img{-webkit-user-drag: none;}
     margin-left: 2.2vw;
     border-top: 1px solid var(--transparent);
     transition: color 0.3s, border 0.3s;
-    margin-top: 0.5vh;
+    margin-top: 0.3vw;
 }
 .buttons_header:hover{
     color: var(--gold);
@@ -153,7 +153,7 @@ img{-webkit-user-drag: none;}
 #title2{
     position: absolute;
     left: 7vw;
-    top: 8vh;
+    top: 3.9vw;
     font-family: var(--titles);
     font-weight: 350;
     font-size: 3vw;
@@ -173,7 +173,7 @@ img{-webkit-user-drag: none;}
 #text2{
     position: absolute;
     left: 15.2vw;
-    top: 22vh;
+    top: 10.5vw;
     font-family: var(--titles);
     font-style: normal;
     font-weight: 400;
@@ -191,10 +191,10 @@ img{-webkit-user-drag: none;}
 }
 #logo_bg2{
     position: absolute;
-    width: 25vh;
-    height: 25vh;
+    width: 12.3vw;
+    height: 12.3vw;
     left: 13.2vw;
-    top: 28vh;
+    top: 13.2vw;
     transform: scale(95%);
     filter: opacity(0);
     transition: transform 0.8s ease-in-out , filter 0.4s ease-in-out;
@@ -223,7 +223,7 @@ img{-webkit-user-drag: none;}
 #title3{
     position: absolute;
     left: 17vw;
-    top: 5vh;
+    top: 2.7vw;
     font-family: var(--titles);
     font-weight: bolder;
     font-size: 3.2vw;
@@ -240,11 +240,11 @@ img{-webkit-user-drag: none;}
 #text3{
     position: absolute;
     left: 22vw;
-    top: 12.5vh;
+    top: 6.4vw;
     font-family: var(--titles);
     font-style: normal;
     font-weight: 400;
-    font-size: 3vh;
+    font-size: 1.5vw;
     color: var(--white);
     transform: translateY(20%);
     filter: opacity(0);
@@ -257,10 +257,9 @@ img{-webkit-user-drag: none;}
 }
 #stars{
     position: absolute;
-    width: 20vh;
-    height: 5.3vh;
+    width: 10vw;
     left: 28vw;
-    top: 15.5vh;
+    top: 7.8vw;
     transform: translateY(20%);
     filter: opacity(0);
     transition: transform 0.8s ease-in-out , filter 0.4s ease-in-out;
@@ -276,32 +275,33 @@ img{-webkit-user-drag: none;}
 #footer{
     position: absolute;
     width: 100%;
-    height: 23vh;
+    height: 11vw;
     left: 0px;
     top: 161.5%;
     background-color: var(--black_footer);
-    border-top: solid var(--gold) 0.3vh;
+    border-top: solid var(--gold) 0.2vw;
 }
 #logo_footer{
     position: absolute;
-    width: 23vh;
+    width: 12vw;
+    height: 3.5vw;
     left: 20vw;
-    top: 8vh;
+    top: 3.6vw;
 }
 #footer_text1{
     position: absolute;
     left: 45.9vw;
-    top: 8vh;
+    top: 3.8vw;
     font-weight: 400;
-    font-size: 1.8vh;
+    font-size: 0.85vw;
     text-align: center;
 }
 #footer_text2{
     position: absolute;
-    left: 44.8vw;
-    top: 10.2vh;
+    left: 44.5vw;
+    top: 5.1vw;
     font-weight: 600;
-    font-size: 3.8vh;
+    font-size: 1.85vw;
     text-align: center;
     color: var(--gold);
 }
@@ -309,17 +309,17 @@ img{-webkit-user-drag: none;}
     font-family: 'Vollkorn', serif;
     position: absolute;
     left: 63vw;
-    top: 10vh;
+    top: 4.8vw;
     font-family: 'Vollkorn';
     font-style: normal;
     font-weight: 400;
-    font-size: 3vh;
+    font-size: 1.6vw;
     text-align: center;
 }
 #social{
     position: absolute;
     left: 70.5vw;
-    top: 9.5vh;
+    top: 4.4vw;
 }
 .logo_social{
     height: 2.3vw;
