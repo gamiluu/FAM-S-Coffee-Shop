@@ -96,7 +96,8 @@ public class UsuarioDAO implements DAO<Usuario, Integer>{
         int resp = 0;
         try {
             motorSql.connect();
-            String sql = "INSERT INTO `usuario` (`Nombre`, `Email`, `Contrasena`, `Tipo`) VALUES " + "('"
+            String sql = "INSERT INTO USUARIOS (NOMBRE, EMAIL, CONTRASENA, TIPO) VALUES " + "('"
+                    + entity.getId() + "' "
                     + entity.getNombre() + "', "
                     + entity.getEmail() + "', "
                     + entity.getContrasena() + "', "
