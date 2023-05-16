@@ -35,19 +35,17 @@ public class CartAction implements IAction{
     private String findByFilter(HttpServletRequest request, HttpServletResponse response) {
         CartDAO cartDAO = new CartDAO();
         String tipo = request.getParameter("FILTRO");
-        ArrayList<Cart> carts = cartDAO.filterType(tipo);
-        return Cart.toArrayJSon(carts);
+        //ArrayList<Cart> carts = cartDAO.filterType(tipo);
+        //return Cart.toArrayJSon(carts);
+        return "asd";
     }
 
     private void add(HttpServletRequest request, HttpServletResponse response) {
-        String nombre = request.getParameter("NOMBRE");
-        String correo = request.getParameter("CORREO");
-        String contrasena = request.getParameter("CONTRASENA");
         String idString = request.getParameter("ID");
         int id = Integer.parseInt(idString);
-        Usuario usuario = new Usuario(id, nombre, correo, contrasena, "usuario");
-        UsuarioDAO usuarioDAO = new UsuarioDAO();
-        usuarioDAO.add(usuario);
+        //Usuario usuario = new Usuario(id, nombre, correo, contrasena, "usuario");
+        //UsuarioDAO usuarioDAO = new UsuarioDAO();
+        //usuarioDAO.add(usuario);
     }
     
 }

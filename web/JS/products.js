@@ -72,7 +72,7 @@ async function mostrarResultados(url) {
       /*le damos el contenido al div creado anteriormente*/
       item.innerHTML = `    
               <div id="img">
-                  <img src="/web/IMG/products/cm2.png" class="cafetera1">
+                  <img src="IMG/PRODUCTS/cm2.png" class="cafetera1">
               </div>
               <div id="content">
                   <div id="content_header">
@@ -90,10 +90,16 @@ async function mostrarResultados(url) {
                           <span style="color:#EFBB02" class="material-symbols-outlined">grade</span>
                           <span style="color:#ffffff" class="material-symbols-outlined">grade</span>
                       </div>
-                      <button id="add_cart">Add to cart</button>
+                      <button onclick="addCart(${resultados[i].id})" id="add_cart">Add to cart</button>
                   </div>
               </div>
       `;
       document.querySelector(".productos").appendChild(item); //añadimos el div creado anteriormente al div con clase productos
   }
+}
+var productos = JSON.parse(localStorage.getItem("productos")) || {};
+localStorage.setItem("productos", {})
+function addCart(id){
+    productos.push(id);
+    localStorage.setItem("productos", JSON.stringify(productos));
 }
