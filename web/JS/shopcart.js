@@ -50,4 +50,3 @@ function delete_item(id){
     item.remove();
 }
 
-
