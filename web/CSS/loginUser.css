@@ -61,6 +61,7 @@ img{-webkit-user-drag: none;}
     float:left;
     height: 60%;
     margin-left: 1.6vw;
+
 }
 .buttons_header{
     float: left;
@@ -88,7 +89,7 @@ img{-webkit-user-drag: none;}
     background-image: url("/web/IMG/LOGIN/login_bg.jpg");
     background-repeat:no-repeat;
     background-size:cover;
-    filter: blur(20px) brightness(0.7);
+    filter: blur(1vw) brightness(0.7);
     z-index: -10;
 }
 #content{
@@ -175,14 +176,13 @@ img{-webkit-user-drag: none;}
     color: black;
 }
 #text1{
-
     margin: auto;
     margin-top: 2.7vw;
     left: 0;
     right: 0;
     margin-bottom: 1vw;
     height: 1.5vw;
-    width: 6.5vw;
+    width: 8.5vw;
     font-size: 1.2vw;
     border-bottom: 0.4vh solid var(--gold);
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.45);;
@@ -198,12 +198,14 @@ img{-webkit-user-drag: none;}
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 #text3{
-    font-size: 0.9vw;
-    margin-top: 1.4vw;
+    font-size: 1vw;
+    margin-top: 0.6vw;
     color: white;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
 }
+
 #text4{
+    margin-top: 0.3vw;
     font-weight: 600;
     font-size: 1.6vw;
     color: #EFBB02;
