@@ -120,7 +120,7 @@ CREATE TABLE PRODUCTOS(
     
     
 INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (1, 'Cafetera DeLonghi Dedica', 'Cafetera espresso con diseño elegante y compacto.', 'https://www.delonghi.com/es-es/productos/maquinas-de-cafe/cafeteras-espresso/dedica-ec-685bk-0132106148', 199.99, 10, 'Cafetera', 4);
+VALUES (1, 'Cafetera DeLonghi Dedica', 'Cafetera espresso con diseño elegante y compacto.', 'IMG/PRODUCTS/cm2.png', 199.99, 10, 'Cafetera', 4);
 
 INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
 VALUES (2, 'Cafetera italiana Bialetti Moka Express', 'Cafetera clásica de aluminio para preparar café con sabor intenso.', 'https://www.bialetti.it/es_es/moka-express.html', 24.99, 20, 'Cafetera', 5);

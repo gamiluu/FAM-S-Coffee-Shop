@@ -50,3 +50,18 @@ function delete_item(id){
     item.remove();
 }
 
+/**************************************************************/
+
+var productos = JSON.parse(localStorage.getItem('productos'));
+
+async function obtenerResultados() {
+  const response = await fetch("Controller?ACTION=PRODUCTOS.FIND_ALL", {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json'
+      }
+  });
+  const resultados = await response.json();
+  return resultados;
+}
+

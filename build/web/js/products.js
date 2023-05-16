@@ -97,9 +97,17 @@ async function mostrarResultados(url) {
       document.querySelector(".productos").appendChild(item); //añadimos el div creado anteriormente al div con clase productos
   }
 }
-var productos = JSON.parse(localStorage.getItem("productos")) || {};
-localStorage.setItem("productos", {})
+
+
+if (!localStorage.getItem('productos')) {
+  localStorage.setItem('productos', JSON.stringify([]));
+}
+var productos = JSON.parse(localStorage.getItem('productos'));
+
 function addCart(id){
+    if (productos.includes(id)) {
+        return;
+    }
     productos.push(id);
     localStorage.setItem("productos", JSON.stringify(productos));
 }
