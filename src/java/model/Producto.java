@@ -180,58 +180,58 @@ SELECT * FROM PRODUCTOS WHERE TIPO='Capsula';
 
 /*BASE ACTUALIZADA PAPA
 
-INSERT INTO PRODUCTS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (1, 'DeLonghi Dedica Espresso Machine', 'Espresso machine with elegant and compact design.', 'IMG/PRODUCTS/cm2.png', 199.99, 10, 'Coffee Machine', 4);
+INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
+VALUES (1, 'DeLonghi Dedica', 'Espresso machine with elegant and compact design.', 'IMG/PRODUCTS/cm2.png', 199.99, 10, 'Coffee Machine', 4);
 
-INSERT INTO PRODUCTS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (2, 'Bialetti Moka Express Italian Coffee Maker', 'Classic aluminum coffee maker for preparing intense coffee.', 'IMG/PRODUCTS/cm4.png', 24.99, 20, 'Coffee Machine', 5);
+INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
+VALUES (2, 'Bialetti Italian', 'Classic aluminum coffee maker for preparing intense coffee.', 'IMG/PRODUCTS/cm4.png', 24.99, 20, 'Coffee Machine', 5);
 
-INSERT INTO PRODUCTS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (3, 'Philips HD7462/20 Drip Coffee Maker', 'Drip coffee maker with capacity for 10-15 cups.', 'IMG/PRODUCTS/cm6.png', 39.99, 15, 'Coffee Machine', 3);
+INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
+VALUES (3, 'Philips HD7462/20 Drip', 'Drip coffee maker with capacity for 10-15 cups.', 'IMG/PRODUCTS/cm6.png', 39.99, 15, 'Coffee Machine', 3);
 
-INSERT INTO PRODUCTS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (4, 'Nespresso Essenza Mini Coffee Machine', 'Capsule coffee machine with compact design and rapid heating system.', 'IMG/PRODUCTS/cm7.png', 89.99, 30, 'Coffee Machine', 4);
+INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
+VALUES (4, 'Nespresso Essenza Mini', 'Capsule coffee machine with compact design and rapid heating system.', 'IMG/PRODUCTS/cm7.png', 89.99, 30, 'Coffee Machine', 4);
 
-INSERT INTO PRODUCTS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (5, 'Oroley Italian Coffee Maker', 'Classic aluminum coffee maker for preparing intense coffee.', 'IMG/PRODUCTS/cm8.png', 14.99, 25, 'Coffee Machine', 4);
+INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
+VALUES (5, 'Oroley Italian', 'Classic aluminum coffee maker for preparing intense coffee.', 'IMG/PRODUCTS/cm8.png', 14.99, 25, 'Coffee Machine', 4);
 
-INSERT INTO PRODUCTS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (6, 'Tassimo Bosch Capsule Coffee Machine', 'Capsule coffee machine with intelligent brewing system.', 'IMG/PRODUCTS/cm9.png', 99.99, 5, 'Coffee Machine', 4);
+INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
+VALUES (6, 'Tassimo Bosch', 'Capsule coffee machine with intelligent brewing system.', 'IMG/PRODUCTS/cm9.png', 99.99, 5, 'Coffee Machine', 4);
 
-INSERT INTO PRODUCTS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (7, 'Monix Italian Coffee Maker', 'Classic aluminum coffee maker for preparing intense coffee.', 'IMG/PRODUCTS/cm10.png', 12.99, 40, 'Coffee Machine', 3);
+INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
+VALUES (7, 'Monix Italian', 'Classic aluminum coffee maker for preparing intense coffee.', 'IMG/PRODUCTS/cm10.png', 12.99, 40, 'Coffee Machine', 3);
 
-INSERT INTO PRODUCTS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (8, 'Aicook Programmable Drip Coffee Maker', 'Programmable drip coffee maker with LCD display.', 'IMG/PRODUCTS/cm11.png', 49.99, 10, 'Coffee Machine', 4);
+INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
+VALUES (8, 'Aicook Programmable Drip', 'Programmable drip coffee maker with LCD display.', 'IMG/PRODUCTS/cm11.png', 49.99, 10, 'Coffee Machine', 4);
 
-INSERT INTO PRODUCTS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (9, 'Dolce Gusto Capsule Coffee Machine', 'Capsule coffee machine with high-pressure system for preparing foamy beverages.', 'IMG/PRODUCTS/cm12.png', 79.99, 15, 'Coffee Machine', 4);
+INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
+VALUES (9, 'Dolce Gusto', 'Capsule coffee machine with high-pressure system for preparing foamy beverages.', 'IMG/PRODUCTS/cm12.png', 79.99, 15, 'Coffee Machine', 4);
 
-INSERT INTO PRODUCTS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (10, 'Nespresso Intenso Capsules', 'Coffee capsules with intense flavor and notes of chocolate.', 'IMG/PRODUCTS/cc2.png', 0.45, 50, 'Capsule', 4);
+INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
+VALUES (10, 'Nespresso Intenso', 'Coffee capsules with intense flavor and notes of chocolate.', 'IMG/PRODUCTS/cc2.png', 0.45, 50, 'Capsule', 4);
 
-INSERT INTO PRODUCTS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (11, 'Nescafé Dolce Gusto Cappuccino Capsules', 'Coffee capsules with milk and milk foam.', 'IMG
+INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
+VALUES (11, 'Nescafé Dolce Gusto Cappuccino', 'Coffee capsules with milk and milk foam.', 'IMG/PRODUCTS/cc3.png', 0.36, 30, 'Capsule', 5);
 
-/PRODUCTS/cc3.png', 0.36, 30, 'Capsule', 5);
+INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
+VALUES (12, 'Lavazza Espresso', 'Espresso coffee capsules with intense aroma and golden crema.', 'IMG/PRODUCTS/cc4.png', 0.35, 20, 'Capsule', 4);
 
-INSERT INTO PRODUCTS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (12, 'Lavazza Espresso Capsules', 'Espresso coffee capsules with intense aroma and golden crema.', 'IMG/PRODUCTS/cc4.png', 0.35, 20, 'Capsule', 4);
+INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
+VALUES (13, 'Tassimo LOR Espresso Fortissimo', 'Espresso coffee capsules with intense flavor and hints of cocoa.', 'IMG/PRODUCTS/cc6.png', 0.39, 40, 'Capsule', 4);
 
-INSERT INTO PRODUCTS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (13, 'Tassimo LOR Espresso Fortissimo Capsules', 'Espresso coffee capsules with intense flavor and hints of cocoa.', 'IMG/PRODUCTS/cc6.png', 0.39, 40, 'Capsule', 4);
+INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
+VALUES (14, 'Senseo Strong', 'Coffee capsules with strong and creamy flavor.', 'IMG/PRODUCTS/cc7.png', 0.25, 25, 'Capsule', 4);
 
-INSERT INTO PRODUCTS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (14, 'Senseo Strong Capsules', 'Coffee capsules with strong and creamy flavor.', 'IMG/PRODUCTS/cc7.png', 0.25, 25, 'Capsule', 4);
+INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
+VALUES (15, 'LOR Lungo Profondo', 'Lungo coffee capsules with intense flavor and hints of wood.', 'IMG/PRODUCTS/cc8.png', 0.35, 30, 'Capsule', 4);
 
-INSERT INTO PRODUCTS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (15, 'LOR Lungo Profondo Capsules', 'Lungo coffee capsules with intense flavor and hints of wood.', 'IMG/PRODUCTS/cc8.png', 0.35, 30, 'Capsule', 4);
+INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
+VALUES (16, 'Nespresso Decaffeinato', 'Decaffeinated coffee capsules with intense flavor and cereal notes.', 'IMG/PRODUCTS/cc9.png', 0.45, 20, 'Capsule', 3);
 
-INSERT INTO PRODUCTS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (16, 'Nespresso Decaffeinato Capsules', 'Decaffeinated coffee capsules with intense flavor and cereal notes.', 'IMG/PRODUCTS/cc9.png', 0.45, 20, 'Capsule', 3);
+INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
+VALUES (17, 'Starbucks Caramel Macchiato', 'Coffee capsules with milk and caramel flavor.', 'IMG/PRODUCTS/cc11.png', 0.6, 15, 'Capsule', 5);
 
-INSERT INTO PRODUCTS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (17, 'Starbucks Caramel Macchiato Capsules', 'Coffee capsules with milk and caramel flavor.', 'IMG/PRODUCTS/cc11.png', 0.6, 15, 'Capsule', 5);
+INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
+VALUES (18, 'Tassimo Milka Hot Chocolate', 'Hot chocolate capsules with smooth and creamy flavor.', 'IMG/PRODUCTS/cc12.png', 0.39, 25, 'Capsule', 4);
 
-INSERT INTO PRODUCTS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (18, 'Tassimo Milka Hot Chocolate Capsules', 'Hot chocolate capsules with smooth and creamy flavor.', 'IMG/PRODUCTS/cc12.png', 0.39, 25, 'Capsule', 4);*/
+*/

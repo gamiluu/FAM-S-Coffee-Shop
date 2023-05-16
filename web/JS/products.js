@@ -72,7 +72,7 @@ async function mostrarResultados(url) {
       /*le damos el contenido al div creado anteriormente*/
       item.innerHTML = `    
               <div id="img">
-                  <img src="IMG/PRODUCTS/cm2.png" class="cafetera1">
+                  <img src="${resultados[i].url}" class="cafetera1">
               </div>
               <div id="content">
                   <div id="content_header">
