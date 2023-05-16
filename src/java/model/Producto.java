@@ -123,55 +123,55 @@ INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIP
 VALUES (1, 'Cafetera DeLonghi Dedica', 'Cafetera espresso con diseño elegante y compacto.', 'IMG/PRODUCTS/cm2.png', 199.99, 10, 'Cafetera', 4);
 
 INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (2, 'Cafetera italiana Bialetti Moka Express', 'Cafetera clásica de aluminio para preparar café con sabor intenso.', 'https://www.bialetti.it/es_es/moka-express.html', 24.99, 20, 'Cafetera', 5);
+VALUES (2, 'Cafetera italiana Bialetti Moka Express', 'Cafetera clásica de aluminio para preparar café con sabor intenso.', 'IMG/PRODUCTS/cm4.png', 24.99, 20, 'Cafetera', 5);
 
 INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (3, 'Cafetera de goteo Philips HD7462/20', 'Cafetera de goteo con capacidad para 10-15 tazas.', 'https://www.philips.es/c-p/HD7462_20/cafe-de-goteo', 39.99, 15, 'Cafetera', 3);
+VALUES (3, 'Cafetera de goteo Philips HD7462/20', 'Cafetera de goteo con capacidad para 10-15 tazas.', 'IMG/PRODUCTS/cm6.png', 39.99, 15, 'Cafetera', 3);
 
 INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (4, 'Cafetera Nespresso Essenza Mini', 'Cafetera de cápsulas con diseño compacto y sistema de calentamiento rápido.', 'https://www.nespresso.com/es/es/order/machines/essenza-mini-blanca', 89.99, 30, 'Cafetera', 4);
+VALUES (4, 'Cafetera Nespresso Essenza Mini', 'Cafetera de cápsulas con diseño compacto y sistema de calentamiento rápido.', 'IMG/PRODUCTS/cm7.png', 89.99, 30, 'Cafetera', 4);
 
 INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (5, 'Cafetera italiana Oroley', 'Cafetera clásica de aluminio para preparar café con sabor intenso.', 'https://www.oroley.es/cafeteras/cafetera-italiana/', 14.99, 25, 'Cafetera', 4);
+VALUES (5, 'Cafetera italiana Oroley', 'Cafetera clásica de aluminio para preparar café con sabor intenso.', 'IMG/PRODUCTS/cm8.png', 14.99, 25, 'Cafetera', 4);
 
 INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (6, 'Cafetera de cápsulas Tassimo Bosch', 'Cafetera de cápsulas con sistema de preparación inteligente.', 'https://www.bosch-home.es/productos/cafe-y-desayuno/cafeteras-y-teteras/cafeteras-multibebidas/CMV636BS1', 99.99, 5, 'Cafetera', 4);
+VALUES (6, 'Cafetera de cápsulas Tassimo Bosch', 'Cafetera de cápsulas con sistema de preparación inteligente.', 'IMG/PRODUCTS/cm9.png', 99.99, 5, 'Cafetera', 4);
 
 INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (7, 'Cafetera italiana Monix', 'Cafetera clásica de aluminio para preparar café con sabor intenso.', 'https://www.monix.com/cafeteras/cafe-italiano', 12.99, 40, 'Cafetera', 3);
+VALUES (7, 'Cafetera italiana Monix', 'Cafetera clásica de aluminio para preparar café con sabor intenso.', 'IMG/PRODUCTS/cm10.png', 12.99, 40, 'Cafetera', 3);
 
 INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (8, 'Cafetera de goteo Aicook', 'Cafetera de goteo programable con pantalla LCD.', 'https://www.aicook.cc/collections/coffee-makers/products/aicook-coffee-maker', 49.99, 10, 'Cafetera', 4);
+VALUES (8, 'Cafetera de goteo Aicook', 'Cafetera de goteo programable con pantalla LCD.', 'IMG/PRODUCTS/cm11.png', 49.99, 10, 'Cafetera', 4);
 
 INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (9, 'Cafetera de cápsulas Dolce Gusto', 'Cafetera de cápsulas con sistema de alta presión para preparar bebidas con espuma.', 'https://www.dolce-gusto.es/multibebidas', 79.99, 15, 'Cafetera', 4);
+VALUES (9, 'Cafetera de cápsulas Dolce Gusto', 'Cafetera de cápsulas con sistema de alta presión para preparar bebidas con espuma.', 'IMG/PRODUCTS/cm12.png', 79.99, 15, 'Cafetera', 4);
 
 INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (10, 'Capsulas Nespresso Intenso', 'Capsulas de café con sabor intenso y notas a chocolate.', 'https://www.nespresso.com/es/es/order/capsules/intenso', 0.45, 50, 'Capsula', 4);
+VALUES (10, 'Capsulas Nespresso Intenso', 'Capsulas de café con sabor intenso y notas a chocolate.', 'IMG/PRODUCTS/cc2.png', 0.45, 50, 'Capsula', 4);
 
 INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (11, 'Capsulas Nescafé Dolce Gusto Cappuccino', 'Capsulas de café con leche y espuma de leche.', 'https://www.dolce-gusto.es/capsulas/cappuccino', 0.36, 30, 'Capsula', 5);
+VALUES (11, 'Capsulas Nescafé Dolce Gusto Cappuccino', 'Capsulas de café con leche y espuma de leche.', 'IMG/PRODUCTS/cc3.png', 0.36, 30, 'Capsula', 5);
 
 INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (12, 'Capsulas Lavazza Espresso', 'Capsulas de café espresso con aroma intenso y crema dorada.', 'https://www.lavazza.es/es_ES/tienda/capsulas-de-cafe-espresso.html', 0.35, 20, 'Capsula', 4);
+VALUES (12, 'Capsulas Lavazza Espresso', 'Capsulas de café espresso con aroma intenso y crema dorada.', 'IMG/PRODUCTS/cc4.png', 0.35, 20, 'Capsula', 4);
 
 INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (13, 'Capsulas Tassimo LOR Espresso Fortissimo', 'Capsulas de café espresso con sabor intenso y notas de cacao.', 'https://www.tassimo.es/bebidas/lor-espresso-fortissimo', 0.39, 40, 'Capsula', 4);
+VALUES (13, 'Capsulas Tassimo LOR Espresso Fortissimo', 'Capsulas de café espresso con sabor intenso y notas de cacao.', 'IMG/PRODUCTS/cc6.png', 0.39, 40, 'Capsula', 4);
 
 INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (14, 'Capsulas Senseo Strong', 'Capsulas de café con sabor fuerte y cremoso.', 'https://www.senseo.es/tiendas/capsulas/capsulas-strong.html', 0.25, 25, 'Capsula', 4);
+VALUES (14, 'Capsulas Senseo Strong', 'Capsulas de café con sabor fuerte y cremoso.', 'IMG/PRODUCTS/cc7.png', 0.25, 25, 'Capsula', 4);
 
 INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (15, 'Capsulas LOR Lungo Profondo', 'Capsulas de café Lungo con sabor intenso y notas a madera.', 'https://www.lor.es/bebidas/lungo-profondo', 0.35, 30, 'Capsula', 4);
+VALUES (15, 'Capsulas LOR Lungo Profondo', 'Capsulas de café Lungo con sabor intenso y notas a madera.', 'IMG/PRODUCTS/cc8.png', 0.35, 30, 'Capsula', 4);
 
 INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (16, 'Capsulas Nespresso Decaffeinato', 'Capsulas de café descafeinado con sabor intenso y notas a cereales.', 'https://www.nespresso.com/es/es/order/capsules/decaffeinato', 0.45, 20, 'Capsula', 3);
+VALUES (16, 'Capsulas Nespresso Decaffeinato', 'Capsulas de café descafeinado con sabor intenso y notas a cereales.', 'IMG/PRODUCTS/cc9.png', 0.45, 20, 'Capsula', 3);
 
 INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (17, 'Capsulas Starbucks Caramel Macchiato', 'Capsulas de café con leche y sabor a caramelo.', 'https://www.starbucksathome.es/productos/bebidas-en-capsulas/caramel-macchiato', 0.6, 15, 'Capsula', 5);
+VALUES (17, 'Capsulas Starbucks Caramel Macchiato', 'Capsulas de café con leche y sabor a caramelo.', 'IMG/PRODUCTS/cc11.png', 0.6, 15, 'Capsula', 5);
 
 INSERT INTO PRODUCTOS (ID_PRODUCTO, NOMBRE, DESCRIPCION, URL, PRECIO, STOCK, TIPO, VALORACION)
-VALUES (18, 'Capsulas Tassimo Milka', 'Capsulas de chocolate caliente con sabor suave y cremoso.', 'https://www.tassimo.es/bebidas/milka', 0.39, 25, 'Capsula', 4);
+VALUES (18, 'Capsulas Tassimo Milka', 'Capsulas de chocolate caliente con sabor suave y cremoso.', 'IMG/PRODUCTS/cc12.png', 0.39, 25, 'Capsula', 4);
     
 
 SELECT * FROM PRODUCTOS WHERE TIPO='Capsula';
