@@ -85,7 +85,7 @@ img{-webkit-user-drag: none;}
     top: 8.9%;
     width: 100%;
     height: 91%;
-    background-image: url("/web/IMG/STAFF/bg_prl.jpg");
+    background-image: url("../IMG/STAFF/bg_prl.jpg");
     background-repeat:no-repeat;
     background-size:cover;
     filter: blur(20px) brightness(0.7);

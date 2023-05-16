@@ -1,70 +1,128 @@
 package model;
 
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
-public class UsuarioDAO implements DAO<Usuario, Integer> {
-
-    private static final String SQL_FIND_ALL = "SELECT  *  FROM usuario WHERE 1=1 ";
-    private MotorSQL motorSql;
-
-    public UsuarioDAO() {
-        this.motorSql = new MotorSQL();
-    }
+public class UsuarioDAO implements DAO<Usuario, Integer>{
     
-    @Override
-    public int add(Usuario entity) {
-        return 0;
-    }
-
-    @Override
-    public int delete(Integer e) {
-        return 0;
-    }
-
-    @Override
-    public int update(Usuario entity) {
-        return 0;
+    private MotorSQL motorSql;
+    
+    public UsuarioDAO() {
+        motorSql = new MotorSQL();
     }
 
     @Override
     public ArrayList<Usuario> findAll(Usuario entity) {
-        ArrayList<Usuario> lstUsuarios = new ArrayList<>();
+        ArrayList<Usuario> usuarios = new ArrayList<>();
+        String sql = "SELECT * FROM USUARIOS";
         try {
-            this.motorSql.connect();
-            String sqlCabecera = SQL_FIND_ALL;
-            String sqlCuerpo = "";
-            if (entity != null) {
-                if (entity.getId() > 0) {
-                    sqlCuerpo = " AND ID_USUARIO=" + entity.getId();
-                }
-                if (entity.getUsername() != null && !entity.getUsername().equals("")) {
-                    sqlCuerpo = " AND USERNAME='" + entity.getUsername() + "'";
-                }
-                if (entity.getPassword() != null && !entity.getPassword().equals("")) {
-                    sqlCuerpo += " AND PASS='" + entity.getPassword() + "'";
-                }
+            motorSql.connect();
+            System.out.println(sql);
+            ResultSet rs = motorSql.executeQuery(sql);
 
+            while (rs.next()) {// TRANSFOMAR LA COLECCIÓN DE BASE DE DATOS A UN ARRAYLIST
+                Usuario usuario = new Usuario(
+                        rs.getInt("ID_USUARIO"),
+                        rs.getString("NOMBRE"),
+                        rs.getString("EMAIL"),
+                        rs.getString("CONTRASENA"),
+                        rs.getString("TIPO")
+                );
+                usuarios.add(usuario);
             }
-
-            String sqlFinal = sqlCabecera + sqlCuerpo;
-            ResultSet rs = this.motorSql.executeQuery(sqlFinal);
-
-            rs.beforeFirst();
-            while (rs.next()) {
-                Usuario usuario = new Usuario();
-                usuario.setId(rs.getInt(1));
-                usuario.setUsername(rs.getString(2));
-                usuario.setPassword(rs.getString(3));
-                lstUsuarios.add(usuario);
-            }
-        } catch (Exception ex) {
-
+        } catch (SQLException e) {
+            System.out.println(e);
         } finally {
-            this.motorSql.disconnect();
+            motorSql.disconnect();
         }
-
-        return lstUsuarios;
+        return usuarios;
     }
+    
+    public ArrayList<Usuario> findAllUsers(Usuario entity) {
+        ArrayList<Usuario> usuarios = new ArrayList<>();
+        String sql = "SELECT * FROM USUARIOS WHERE TIPO = 'usuario'";
+        try {
+            motorSql.connect();
+            System.out.println(sql);
+            ResultSet rs = motorSql.executeQuery(sql);
+
+            while (rs.next()) {// TRANSFOMAR LA COLECCIÓN DE BASE DE DATOS A UN ARRAYLIST
+                Usuario usuario = new Usuario(
+                        rs.getInt("ID_USUARIO"),
+                        rs.getString("NOMBRE"),
+                        rs.getString("EMAIL"),
+                        rs.getString("CONTRASENA"),
+                        rs.getString("TIPO")
+                );
+                usuarios.add(usuario);
+            }
+        } catch (SQLException e) {
+            System.out.println(e);
+        } finally {
+            motorSql.disconnect();
+        }
+        return usuarios;
+    }
+    
+    public ArrayList<Usuario> findAllStaff(Usuario entity) {
+        ArrayList<Usuario> usuarios = new ArrayList<>();
+        String sql = "SELECT * FROM USUARIOS WHERE TIPO = 'staff'";
+        try { 
+            motorSql.connect();
+            System.out.println(sql);
+            ResultSet rs = motorSql.executeQuery(sql);
+
+            while (rs.next()) {// TRANSFOMAR LA COLECCIÓN DE BASE DE DATOS A UN ARRAYLIST
+                Usuario usuario = new Usuario(
+                        rs.getInt("ID_USUARIO"),
+                        rs.getString("NOMBRE"),
+                        rs.getString("EMAIL"),
+                        rs.getString("CONTRASENA"),
+                        rs.getString("TIPO")
+                );
+                usuarios.add(usuario);
+            }
+        } catch (SQLException e) {
+            System.out.println(e);
+        } finally {
+            motorSql.disconnect();
+        }
+        return usuarios;
+    }
+    
+    @Override
+    public int add(Usuario entity) {
+        int resp = 0;
+        try {
+            motorSql.connect();
+            String sql = "INSERT INTO USUARIOS (NOMBRE, EMAIL, CONTRASENA, TIPO) VALUES " + "('"
+                    + entity.getId() + "' "
+                    + entity.getNombre() + "', "
+                    + entity.getEmail() + "', "
+                    + entity.getContrasena() + "', "
+                    + entity.getTipo() + "');";
+            resp = motorSql.execute(sql);
+        } catch (Exception e) {
+            System.out.println(e);
+        } finally {
+            motorSql.disconnect();
+        }
+        if (resp > 0) {
+            System.out.println("Usuario insertado con exito.");
+        }
+        return resp;
+    }
+
+    @Override
+    public int delete(Integer e) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public int update(Usuario entity) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
     
 }
