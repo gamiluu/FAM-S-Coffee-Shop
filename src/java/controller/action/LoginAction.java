@@ -16,6 +16,9 @@ public class LoginAction implements IAction {
         String action = (String) request.getParameter("ACTION");
         String[] arrayAction = action.split("\\.");
         switch (arrayAction[1]) {
+            case "FIND_ALL":
+                cadDestino = findAll(request, response);
+                break;
             case "LOGIN_USUARIO":
                 cadDestino = findAllUsers(request, response);
                 break;
@@ -29,6 +32,12 @@ public class LoginAction implements IAction {
         return cadDestino;
     }
 
+    private String findAll(HttpServletRequest request, HttpServletResponse response) {
+        UsuarioDAO usuarioDAO = new UsuarioDAO();
+        ArrayList<Usuario> usuarios = usuarioDAO.findAll(null);
+        return Usuario.toArrayJSon(usuarios);
+    }
+    
     private String findAllUsers(HttpServletRequest request, HttpServletResponse response) {
         UsuarioDAO usuarioDAO = new UsuarioDAO();
         ArrayList<Usuario> usuarios = usuarioDAO.findAllUsers(null);
@@ -42,10 +51,12 @@ public class LoginAction implements IAction {
     }
 
     private void add(HttpServletRequest request, HttpServletResponse response) {
-        String nombre = request.getParameter("nombre");
-        String correo = request.getParameter("correo");
-        String contrasena = request.getParameter("contrasena");
-        Usuario usuario = new Usuario(nombre, correo, contrasena, "usuario");
+        String nombre = request.getParameter("NOMBRE");
+        String correo = request.getParameter("CORREO");
+        String contrasena = request.getParameter("CONTRASENA");
+        String idString = request.getParameter("ID");
+        int id = Integer.parseInt(idString);
+        Usuario usuario = new Usuario(id, nombre, correo, contrasena, "usuario");
         UsuarioDAO usuarioDAO = new UsuarioDAO();
         usuarioDAO.add(usuario);
     }
