@@ -1,10 +1,11 @@
-listar_json();
+listar_json()
 
 //LISTADO DE LOS PRODUCTOS EN BASE A UN JSON DE PRUEBA
 async function listar_json() {
     var items = await filtrarProductos()
     // Ahora, los datos del archivo JSON están almacenados en la variable 'data'.
     const listado = document.querySelector('.items')
+    listado.innerHTML = "";
     //Variable que usaremos para obtener subtotal, shipping y el.
     var total_item = 0.00;
     var subtotal = 0.00;
@@ -25,6 +26,13 @@ async function listar_json() {
         quantityInput.classList.add('quantity');
         quantityInput.addEventListener('input', actualizarTotal);
         
+        const deleteButton = document.createElement('img');
+        deleteButton.src = "./IMG/logos/delete_button.png";
+        deleteButton.classList.add('delete_button');
+        deleteButton.addEventListener('click', () => {
+            delete_item(item.id) 
+            actualizarTotal
+        });
         producto.innerHTML += `<div class="item_desc"><img src="` + item.url + `" class="item_pic">` + item.nombre + `</div>
                                 <div class="item_price">` + item.precio + `€</div>
                                 <div class="item_quantity">
@@ -65,15 +73,21 @@ async function listar_json() {
 
 //Función con la que eliminamos los elementos de la lista por su ID.
 function delete_item(id) {
+    console.log(id);
     item = document.getElementById(id);
+    console.log(item);
     item.remove();
+    
+    //borrar local storage lo de abajo
     var productos = JSON.parse(localStorage.getItem('productos'));
     var index = productos.indexOf(id);
     if (index !== -1) {
         productos.splice(index, 1);
         localStorage.setItem('productos', JSON.stringify(productos));
     }
-    actualizarTotal()
+    console.log(localStorage)
+    listar_json();
+
     
 }
 
