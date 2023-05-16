@@ -1,4 +1,5 @@
 var resultados = []
+var all = []
 
 async function obtenerResultados() {
   const response = await fetch("Controller?ACTION=LOGIN.LOGIN_STAFF", {
@@ -20,7 +21,9 @@ document.querySelector('#button').addEventListener('click', async ()=>{
     if(resultados[i].nombre == username){
       if(resultados[i].contrasena == password){
         document.querySelector('#login_error').style.display = "none";
-        window.location.href = "http://localhost:8080/FAM-S-Coffee-Shop/index.html"
+        localStorage.setItem("user", username);
+        localStorage.setItem("pass", password);
+        window.location.href = "http://localhost:8080/FAM-S-Coffee-Shop/staff.html"
         break
       }else{
         document.querySelector('#login_error').style.display = "block";
@@ -32,7 +35,24 @@ document.querySelector('#button').addEventListener('click', async ()=>{
 })
 
 
+async function checkLogin(){
+  const respuesta = await fetch("Controller?ACTION=LOGIN.LOGIN_STAFF", {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+});
+    all = await respuesta.json();
+    all.forEach(element => {
+      if(localStorage.getItem("user") == element.nombre){
+        if(localStorage.getItem("pass") == element.contrasena){
+          window.location.href = "http://localhost:8080/FAM-S-Coffee-Shop/staff.html"
+        }
+      }
+    });
+}
 
+checkLogin()
 
 
 
