@@ -75,16 +75,17 @@ public class ProductoDAO implements DAO<Producto, Integer> {
         return productos;
     }
 
+    /*
     public static void main(String[] args) {
 
         ProductoDAO productoDAO = new ProductoDAO();
 
         ArrayList lstProductos = productoDAO.findAll(null);
         System.out.println(lstProductos.toString());
-    }
+    }*/
 
     @Override
-    public int add(Producto bean) {
+    public int add(Producto entity) {
         return 0;
     }
 
@@ -94,7 +95,7 @@ public class ProductoDAO implements DAO<Producto, Integer> {
     }
 
     @Override
-    public int update(Producto bean) {
+    public int update(Producto entity) {
         return 0;
     }
 }

@@ -25,6 +25,10 @@ public class Controller extends HttpServlet {
                 break;
             case "LOGIN":
                 out.print(new LoginAction().execute(request, response));
+                break;
+            case "CART":
+                out.print(new CartAction().execute(request, response));
+                break;
         }
     }
 

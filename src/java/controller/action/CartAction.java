@@ -3,11 +3,10 @@ package controller.action;
 import java.util.ArrayList;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import model.Producto;
-import model.ProductoDAO;
+import model.Cart;
+import model.CartDAO;
 
-public class ProductoAction implements IAction {
-
+public class CartAction implements IAction{
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
         String cadDestino = "";
@@ -20,30 +19,35 @@ public class ProductoAction implements IAction {
             case "FILTER":
                 cadDestino = findByFilter(request, response);
                 break;
-            case "PRICE":
-                cadDestino = findByPrice(request, response);
+            case "ADD":
+                add(request, response);
                 break;
         }
         return cadDestino;
     }
     
     private String findAll(HttpServletRequest request, HttpServletResponse response) {
-        ProductoDAO productoDAO = new ProductoDAO();
-        ArrayList<Producto> productos = productoDAO.findAll(null);
-        return Producto.toArrayJSon(productos);
-    }
-
-    private String findByFilter(HttpServletRequest request, HttpServletResponse response) {
-        ProductoDAO productoDAO = new ProductoDAO();
-        String tipo = request.getParameter("FILTRO");
-        ArrayList<Producto> productos = productoDAO.filterType(tipo);
-        return Producto.toArrayJSon(productos);
+        CartDAO cartDAO = new CartDAO();
+        ArrayList<Cart> carts = cartDAO.findAll(null);
+        return Cart.toArrayJSon(carts);
     }
     
-    private String findByPrice(HttpServletRequest request, HttpServletResponse response) {
-        ProductoDAO productoDAO = new ProductoDAO();
-        String tipo = request.getParameter("RANGO");
-        ArrayList<Producto> productos = productoDAO.filterType(tipo);
-        return Producto.toArrayJSon(productos);
+    private String findByFilter(HttpServletRequest request, HttpServletResponse response) {
+        CartDAO cartDAO = new CartDAO();
+        String tipo = request.getParameter("FILTRO");
+        ArrayList<Cart> carts = cartDAO.filterType(tipo);
+        return Cart.toArrayJSon(carts);
     }
+
+    private void add(HttpServletRequest request, HttpServletResponse response) {
+        String nombre = request.getParameter("NOMBRE");
+        String correo = request.getParameter("CORREO");
+        String contrasena = request.getParameter("CONTRASENA");
+        String idString = request.getParameter("ID");
+        int id = Integer.parseInt(idString);
+        Usuario usuario = new Usuario(id, nombre, correo, contrasena, "usuario");
+        UsuarioDAO usuarioDAO = new UsuarioDAO();
+        usuarioDAO.add(usuario);
+    }
+    
 }
