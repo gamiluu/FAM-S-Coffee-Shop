@@ -20,7 +20,7 @@
 
 /*Ponemos fondo al cuerpo y aplicamos por defecto el color y la letra, también eliminamos la scroll bar*/
 body {
-    background-color: #000000;
+    background-color: #0D0D0D;
     color: var(--white);
     font-family: var(--heebo);
     font-style: normal;
@@ -28,6 +28,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 }
 
 body::-webkit-scrollbar {
@@ -134,7 +135,7 @@ img {
 .filtro #capsulas {
     height: 100%;
     width: 15%;
-    background-color: blue;
+    background-color: var(--black_header);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,21 +145,34 @@ img {
 .filtro #cafeteras {
     height: 100%;
     width: 15%;
-    background-color: rgb(87, 87, 112);
+    background-color: var(--black_header);
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5%;
 }
 
+.filtro #cafeteras:hover {
+    background-color: rgb(58, 58, 58);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.filtro #capsulas:hover {
+    background-color: rgb(58, 58, 58);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
 .filtro #precio {
     height: 100%;
     width: 35%;
-    background-color: rgb(12, 12, 77);
+    background-color: var(--black_footer);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: #EFBB02;
 }
 
 .filtro #close_filter {
@@ -181,12 +195,19 @@ img {
 }
 
 .filtro #close_filter #filter_tag {
-    height: 50%;
-    width: 30%;
-    background-color: rgb(213, 207, 207);
+    height: 100%;
+    width: 100%;
+    background-color: var(--black_header);
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
+}
+
+.filtro #close_filter #filter_tag:hover {
+    background-color: rgb(58, 58, 58);
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 h4 {
@@ -253,6 +274,7 @@ h4 {
     justify-content: space-between;
     margin-left: 4%;
     margin-right: 4%;
+    margin-bottom: 4%;
     align-items: center;
     color: var(--gold);
     font-size: 2vh;
@@ -267,21 +289,20 @@ h4 {
     margin-right: 4%;
     align-items: center;
     text-align: justify;
-    font-size: 1.25vh;
+    font-size: 1.50vh;
 }
 
 #content #content_footer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 4%;
+    margin-left: 20%;
     margin-right: 4%;
+    margin-top: 8%;
     align-items: center;
 }
 
 #content_footer #add_cart {
-    height: 3vh;
-    width: 6vw;
+    height: 4vh;
+    width: 8vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -292,18 +313,14 @@ h4 {
     background-color: black;
     border: 0.2vh solid white;
     font-size: 1.5vh;
+    transition: 0.5s;
 }
 
-#rating {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1%;
-    width: 8vw;
-    height: 2vh;
-    background-color: transparent;
+#content_footer #add_cart:hover {
+    background-color: #efbc02b0;
+    cursor: pointer;
 }
+
 
 /*----------------------------------------------------RANGE PRICES---------------------------------------------------*/
 
