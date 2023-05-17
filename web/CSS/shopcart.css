@@ -91,6 +91,7 @@ img{-webkit-user-drag: none;}
 .icono-user #nick{
     font-size: 1vw;
     text-decoration: none;
+    padding-bottom: 15%;
 }
 
 /*-------------------------------------------------------CONTENT------------------------------------------------------*/

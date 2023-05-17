@@ -1,8 +1,8 @@
 listar_json()
-
+var items;
 //LISTADO DE LOS PRODUCTOS EN BASE A UN JSON DE PRUEBA
 async function listar_json() {
-    var items = await filtrarProductos()
+    items = await filtrarProductos()
     // Ahora, los datos del archivo JSON están almacenados en la variable 'data'.
 
     let listado = document.querySelector('.items')
@@ -49,9 +49,8 @@ async function listar_json() {
         console.log(subtotal.toFixed(2));
         //document.querySelector(".quantity").addEventListener('input', actualizarTotal)
     }
-    function actualizarTotal(event) {
+    function actualizarTotal() {
         subtotal = 0.00;
-        var tecla = event.which || event.keyCode;
 
         for (let i = 0; i < items.length; i++) {
             const item = items[i];
@@ -85,6 +84,49 @@ async function listar_json() {
     actualizarTotal();
 }
 
+
+
+
+
+
+
+function actualizarTotales() {
+    subtotal = 0.00;
+
+    for (let i = 0; i < items.length; i++) {
+        const item = items[i];
+        const quantityInput = document.getElementById(item.id).querySelector('.quantity');
+        const itemTotal = document.getElementById(item.id).querySelector('.item_total');
+        item.cantidad = parseInt(quantityInput.value);
+        itemTotal.textContent = (item.precio * item.cantidad).toFixed(2) + '€';
+        subtotal += item.precio * item.cantidad;
+        if (quantityInput.value === "" || isNaN(quantityInput.value) || parseInt(quantityInput.value) <= -1) {
+            alert("Por favor, introduce un número positivo válido.");
+            var valorActual = quantityInput.value;
+            quantityInput.value = 1;
+
+            // Restaurar el valor actual si se dejó vacío
+            if (valorActual === "") {
+                quantityInput.value = valorActual;
+            }
+        }
+
+    }
+
+
+    document.getElementById("subtotal_value").textContent = subtotal.toFixed(2) + "€";
+    shipping = subtotal * 0.06;
+    document.getElementById("shipping_div").textContent = shipping.toFixed(2) + "€";
+    total = shipping + subtotal;
+    document.getElementById("total_div").textContent = total.toFixed(2) + "€";
+
+}
+
+
+
+
+
+
 function validarTecla(event) {
     var tecla = event.which || event.keyCode;
     // Permitir solo números y delete
@@ -107,6 +149,7 @@ function delete_item(id) {
     }
     borrarHTML()
     listar_json()
+    actualizarTotales()
 }
 
 function borrarHTML() {

@@ -1,9 +1,6 @@
 var resultados = []
 var all = []
 
-let nick = document.querySelector('#nick')
-nick.innerHTML = localStorage.getItem("user")
-
 async function obtenerResultados() {
   const response = await fetch("Controller?ACTION=LOGIN.LOGIN_STAFF", {
       method: 'GET',
