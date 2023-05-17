@@ -139,3 +139,5 @@ async function filtrarProductos() {
     return productosFiltrados;
 }
 
+let nick = document.querySelector('#nick')
+nick.innerHTML = localStorage.getItem("user")
