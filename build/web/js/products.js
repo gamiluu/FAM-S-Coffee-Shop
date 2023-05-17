@@ -83,13 +83,7 @@ async function mostrarResultados(url) {
                       <div id="description">${resultados[i].descripcion}</div>
                   </div>
                   <div id="content_footer">
-                      <div id="rating">
-                          <span style="color:#EFBB02" class="material-symbols-outlined">grade</span>
-                          <span style="color:#EFBB02" class="material-symbols-outlined">grade</span>
-                          <span style="color:#EFBB02" class="material-symbols-outlined">grade</span>
-                          <span style="color:#EFBB02" class="material-symbols-outlined">grade</span>
-                          <span style="color:#ffffff" class="material-symbols-outlined">grade</span>
-                      </div>
+                      
                       <button onclick="addCart(${resultados[i].id})" id="add_cart">Add to cart</button>
                   </div>
               </div>
