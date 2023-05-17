@@ -4,8 +4,10 @@ listar_json()
 async function listar_json() {
     var items = await filtrarProductos()
     // Ahora, los datos del archivo JSON están almacenados en la variable 'data'.
-    const listado = document.querySelector('.items')
+    
+    let listado = document.querySelector('.items')
     listado.innerHTML = "";
+    
     //Variable que usaremos para obtener subtotal, shipping y el.
     var total_item = 0.00;
     var subtotal = 0.00;
@@ -30,13 +32,12 @@ async function listar_json() {
         deleteButton.src = "./IMG/logos/delete_button.png";
         deleteButton.classList.add('delete_button');
         deleteButton.addEventListener('click', () => {
-            delete_item(item.id) 
+            delete_item(item.id)
             actualizarTotal
         });
         producto.innerHTML += `<div class="item_desc"><img src="` + item.url + `" class="item_pic">` + item.nombre + `</div>
                                 <div class="item_price">` + item.precio + `€</div>
                                 <div class="item_quantity">
-                                    
                                 </div>
                                 <div class="item_total">` + item.precio * cantidad + `€</div>
                                 <img src="./IMG/logos/delete_button.png" class="delete_button" onclick="delete_item(` + item.id + `)">
@@ -73,11 +74,9 @@ async function listar_json() {
 
 //Función con la que eliminamos los elementos de la lista por su ID.
 function delete_item(id) {
-    console.log(id);
     item = document.getElementById(id);
     console.log(item);
     item.remove();
-    
     //borrar local storage lo de abajo
     var productos = JSON.parse(localStorage.getItem('productos'));
     var index = productos.indexOf(id);
@@ -85,18 +84,19 @@ function delete_item(id) {
         productos.splice(index, 1);
         localStorage.setItem('productos', JSON.stringify(productos));
     }
-    console.log(localStorage)
-    listar_json();
-
-    
+    borrarHTML()
+    listar_json()
 }
 
-
+function borrarHTML(){
+    let listado = document.querySelector('.items')
+    listado.innerHTML = ""
+}
 
 
 /**************************************************************/
 
-var productos = JSON.parse(localStorage.getItem('productos'));
+
 
 async function obtenerResultados() {
     const response = await fetch("Controller?ACTION=PRODUCTOS.FIND_ALL", {
@@ -106,12 +106,15 @@ async function obtenerResultados() {
         }
     });
     const resultados = await response.json();
+    console.log("Resultados: " + resultados)
     return resultados;
 }
 
 async function filtrarProductos() {
+    var productos = JSON.parse(localStorage.getItem('productos'));
     const resultados = await obtenerResultados();
     const productosFiltrados = resultados.filter(producto => productos.includes(producto.id));
+    console.log("Filtrados: " + productosFiltrados)
     return productosFiltrados;
 }
 
