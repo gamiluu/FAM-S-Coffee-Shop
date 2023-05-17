@@ -4,10 +4,10 @@ listar_json()
 async function listar_json() {
     var items = await filtrarProductos()
     // Ahora, los datos del archivo JSON están almacenados en la variable 'data'.
-    
+
     let listado = document.querySelector('.items')
     listado.innerHTML = "";
-    
+
     //Variable que usaremos para obtener subtotal, shipping y el.
     var total_item = 0.00;
     var subtotal = 0.00;
@@ -21,13 +21,14 @@ async function listar_json() {
         const producto = document.createElement('div');
         producto.classList.add('item');
         producto.setAttribute("id", item.id);
-        
+
         const quantityInput = document.createElement('input');
         quantityInput.type = 'text';
         quantityInput.value = cantidad;
         quantityInput.classList.add('quantity');
         quantityInput.addEventListener('input', actualizarTotal);
-        
+        quantityInput.onkeydown = validarTecla;
+
         const deleteButton = document.createElement('img');
         deleteButton.src = "./IMG/logos/delete_button.png";
         deleteButton.classList.add('delete_button');
@@ -48,8 +49,9 @@ async function listar_json() {
         console.log(subtotal.toFixed(2));
         //document.querySelector(".quantity").addEventListener('input', actualizarTotal)
     }
-    function actualizarTotal() {
+    function actualizarTotal(event) {
         subtotal = 0.00;
+        var tecla = event.which || event.keyCode;
 
         for (let i = 0; i < items.length; i++) {
             const item = items[i];
@@ -58,19 +60,38 @@ async function listar_json() {
             item.cantidad = parseInt(quantityInput.value);
             itemTotal.textContent = (item.precio * item.cantidad).toFixed(2) + '€';
             subtotal += item.precio * item.cantidad;
+            if (quantityInput.value === "" || isNaN(quantityInput.value) || parseInt(quantityInput.value) <= -1) {
+                alert("Por favor, introduce un número positivo válido.");
+                var valorActual = quantityInput.value;
+                quantityInput.value = 1;
+
+                // Restaurar el valor actual si se dejó vacío
+                if (valorActual === "") {
+                    quantityInput.value = valorActual;
+                }
+            }
+
         }
+
 
         document.getElementById("subtotal_value").textContent = subtotal.toFixed(2) + "€";
         shipping = subtotal * 0.06;
         document.getElementById("shipping_div").textContent = shipping.toFixed(2) + "€";
         total = shipping + subtotal;
         document.getElementById("total_div").textContent = total.toFixed(2) + "€";
+
     }
 
     actualizarTotal();
 }
 
-
+function validarTecla(event) {
+    var tecla = event.which || event.keyCode;
+    // Permitir solo números y delete
+    if ((tecla < 48 || tecla > 57) && tecla !== 8 && tecla !== 46) {
+        event.preventDefault();
+    }
+}
 
 //Función con la que eliminamos los elementos de la lista por su ID.
 function delete_item(id) {
@@ -88,7 +109,7 @@ function delete_item(id) {
     listar_json()
 }
 
-function borrarHTML(){
+function borrarHTML() {
     let listado = document.querySelector('.items')
     listado.innerHTML = ""
 }
