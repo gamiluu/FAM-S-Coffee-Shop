@@ -62,6 +62,7 @@ async function obtenerResultados(url) {
 }
 
 async function mostrarResultados(url) {
+
   const resultados = await obtenerResultados(url);
   console.log(resultados)
   document.querySelector(".productos").innerHTML= ""
@@ -105,3 +106,6 @@ function addCart(id){
     productos.push(id);
     localStorage.setItem("productos", JSON.stringify(productos));
 }
+
+let nick = document.querySelector('#nick')
+nick.innerHTML = localStorage.getItem("user")

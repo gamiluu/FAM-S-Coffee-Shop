@@ -35,3 +35,6 @@ function mostrar(){
         stars.classList.add('reveal');
     }
 }
+
+let nick = document.querySelector('#nick')
+nick.innerHTML = localStorage.getItem("user")

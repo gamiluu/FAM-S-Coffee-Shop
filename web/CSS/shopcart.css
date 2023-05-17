@@ -59,6 +59,9 @@ img{-webkit-user-drag: none;}
     margin-left: 1.5vw;
 }
 .buttons_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     float: left;
     font-weight: 400;
     font-size: 1vw;
@@ -75,11 +78,21 @@ img{-webkit-user-drag: none;}
 }
 .icono-user {
     text-align: center;
-    margin-left: 68%;
+    margin-left: 60%;
     margin-top: 1.1%;
     color: #FFFFFF;
     font-size: 2.5vw;
 }
+
+.buttons_header span{
+    font-size: 2vw;
+}
+
+.icono-user #nick{
+    font-size: 1vw;
+    text-decoration: none;
+}
+
 /*-------------------------------------------------------CONTENT------------------------------------------------------*/
 .bg{
     position: absolute;
